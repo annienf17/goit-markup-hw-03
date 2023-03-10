@@ -13,28 +13,41 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <!-- normalize style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- styles CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <!-- header section -->
     <header class="header">
-        <!-- logo -->
-        <a class="logo" href="./"><span>Web</span>Studio</a>
-        <!-- main navigation -->
-        <nav class="main-menu">
+        <!-- max width of page -->
+        <div class="container">
+            <!-- left side -->
+            <div class="container-left">
+                <!-- logo -->
+                <a class="logo" href="./"><span>Web</span>Studio</a>
+                <!-- main navigation -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="./agencja.html">Agencja</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- contact links -->
             <ul>
-                <li><a href="./agencja.html">Agencja</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./kontakt.html">Kontakt</a></li>
+                <li><a href="mailto:info@devstudio.com" title="Kontakt mailowy">info@devstudio.com</a></li>
+                <li><a href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a></li>
             </ul>
-        </nav>
-        <!-- contact links -->
-        <ul>
-            <li><a href="mailto:info@devstudio.com" title="Kontakt mailowy">info@devstudio.com</a></li>
-            <li><a href="tel:+48111111111" title="Kontakt telefoniczny">+48 111 111 111</a></li>
-        </ul>
+        </div>
     </header>
+
 
     <!-- main section content of the portfolio page -->
     <main>

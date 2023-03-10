@@ -13,6 +13,9 @@
      --middle-grey-color: rgba(117 117 117 / 1);
      --dark-grey-color: rgba(47 48 58 / 1);
      --border-color: rgba(236 236 236 / 1);
+
+     /* block models */
+     --section-padding: 94px 0;
 }
 
 /* body of page */
@@ -30,9 +33,37 @@
  li {
      list-style-type: none;
 }
+h2 {
+    margin-bottom: 50px;
+}
+/* max widt of page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* horizontal align ul lists */
+.container ul {
+    display: flex;
+    gap: 46px
+}
+.main-menu ul {
+    gap: 50px;
+}
+/* horizontal aligning header and centered vertically */
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-left {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
 /* header style */
  .header {
      padding-top: 24px;
+     padding-bottom: 25px;
      border-bottom: 1px solid var(--border-color);
 }
 /* header links style  */
@@ -104,9 +135,19 @@ color: var(--blue-color);
      line-height: 1.4;
      letter-spacing: var(--letter-spacing-06);
 }
+/* headline wrapper */
+.headline-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 200px 0;
+}
 /* col-4 list */
  .col-4 {
      font-size: 14px;
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     padding-top: 94px;
 }
  .col-4 h3 {
      font-weight: 700;
@@ -119,16 +160,29 @@ color: var(--blue-color);
 /* activities section */
  .activities {
      text-align: center;
+     padding: var(--section-padding);
 }
  .activities h2 {
      font-size: 36px;
      line-height: 1.2;
 }
+.activities-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 /* team section */
  .team {
      background-color: var(--light-grey-color);
      text-align: center;
+     padding: var(--section-padding);   
 }
+.team ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
  .team h2 {
      font-size: 36px;
      line-height: 1.2;
@@ -147,7 +201,9 @@ color: var(--blue-color);
 }
 /* portfolio buttons */
 .bttn-group {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
  .bttn-group-item {
      padding: 6px 22px;
@@ -159,6 +215,9 @@ color: var(--blue-color);
      color: var(--white-color);
 }
 /* projects gallery */
+.projects-gallery {
+    display: flex;
+}
  .projects-gallery li h2, 
  .projects-gallery li p {
      text-indent: 24px;
