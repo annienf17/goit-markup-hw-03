@@ -42,7 +42,7 @@ h2 {
     margin: 0 auto;
 }
 /* horizontal align ul lists */
-.container ul {
+.header .container ul {
     display: flex;
     gap: 46px
 }
@@ -201,6 +201,7 @@ color: var(--blue-color);
 }
 /* portfolio buttons */
 .bttn-group {
+    padding-top: 94px;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -216,8 +217,12 @@ color: var(--blue-color);
 }
 /* projects gallery */
 .projects-gallery {
-    display: flex;
+    padding: 50px 0 94px 0;
 }
+.projects-gallery ul {
+   margin-bottom: 30px;
+}
+
  .projects-gallery li h2, 
  .projects-gallery li p {
      text-indent: 24px;
@@ -238,6 +243,15 @@ color: var(--blue-color);
 /* projects=gallery list border */
  .projects-gallery li {
      border: 1px solid var(--border-color);
+}
+/* images deployment */
+.projects-gallery-row-1,
+.projects-gallery-row-2,
+.projects-gallery-row-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
 }
 /* footer section */
  .footer {
