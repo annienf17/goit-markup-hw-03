@@ -41,6 +41,10 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
 }
+/* padding for every section */
+.section {
+    padding: var(--section-padding);
+}
 /* horizontal align ul lists */
 .header .container ul {
     display: flex;
@@ -160,7 +164,7 @@ color: var(--blue-color);
 /* activities section */
  .activities {
      text-align: center;
-     padding: var(--section-padding);
+
 }
  .activities h2 {
      font-size: 36px;
@@ -175,7 +179,6 @@ color: var(--blue-color);
  .team {
      background-color: var(--light-grey-color);
      text-align: center;
-     padding: var(--section-padding);   
 }
 .team ul {
     display: flex;
