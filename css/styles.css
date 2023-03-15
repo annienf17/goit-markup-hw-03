@@ -16,11 +16,15 @@
 
      /* block models */
      --section-padding: 94px 0;
+
      /* section fonts  */
      --section-h2-font-size: 36px;
      --section-h2-line-heigh: 1.2;
      --section-h2-margin-top: 0;
-     
+
+     /* positioning margin/padding */
+     --margin-zero: 0;
+     --padding-zero: 0;
 }
 
 /* body of page */
@@ -53,7 +57,7 @@ h2 {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: var(--padding-zero);
 }
 
 /* horizontal align ul lists */
@@ -153,7 +157,6 @@ color: var(--blue-color);
 /* headline wrapper */
 .headline-wrapper {
     max-width: 696px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,12 +164,12 @@ color: var(--blue-color);
 }
 /* col-4 list */
  .col-4 {
-    margin: 0;
-    padding: 0;
+    margin: var(--margin-zero);
+    padding: var(--padding-zero);
      font-size: 14px;
      display: flex;
      justify-content: center;
-    gap: 30px;
+     gap: 30px;
      padding-top: 94px;
 }
 .col-4 li {
@@ -182,7 +185,7 @@ color: var(--blue-color);
  .col-4 p {
      line-height: 1.7;
      color: var(--middle-grey-color);
-     margin: 0;
+     margin: var(--margin-zero);
 }
 /* section h2 style and padding */
 section {
@@ -195,8 +198,8 @@ section h2 {
     margin-top: var(--section-h2-margin-top);
 }
 .team ul {
-    margin: 0;
-    padding: 0;
+    margin: var(--margin-zero);
+    padding: var(--padding-zero);
 }
 /* activities section */
 .activities-images {
@@ -226,19 +229,19 @@ section h2 {
 }
 
 .team h3 {
-    margin: 0;
+    margin: var(--margin-zero);
     padding: 30px 0 10px 0;
 
 }
 .team p {
     color: var(--middle-grey-color);
-    margin: 0;
+    margin: var(--margin-zero);
     padding-bottom: 30px;
 
 }
 /* portfolio buttons */
 .bttn-group {
-    margin: 0;
+    margin: var(--margin-zero);
     padding: 94px 0 50px 0;
     display: flex;
     justify-content: center;
@@ -294,8 +297,8 @@ section h2 {
 }
 /* general styles for footer list */
 .footer ul {
-    margin: 0;
-    padding: 0;
+    margin: var(--margin-zero);
+    padding: var(--padding-zero);
 }
  .footer ul li {
      font-size: 14px;
