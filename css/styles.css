@@ -1,19 +1,19 @@
 :root {
     /* fonts */
      --font-family: 'Roboto', sans-serif;
-     --letter-spacing-02: .02em;
-     --letter-spacing-03: .03em;
-     --letter-spacing-06: .06em;
+     --letter-spacing-small: .02em;
+     --letter-spacing-medium: .03em;
+     --letter-spacing-large: .06em;
 
     /* colors */
-     --font-color: rgba(33 33 33 / 1);
-     --white-color: rgba(255 255 255 / 1);
-     --blue-color: rgba(33 150 243 / 1);
-     --light-grey-color: rgba(245 244 250 / 1);
-     --middle-grey-color: rgba(117 117 117 / 1);
-     --dark-grey-color: rgba(47 48 58 / 1);
-     --border-color: rgba(236 236 236 / 1);
-
+     --color-border: rgba(236 236 236 / 1);
+     --color-font: rgba(33 33 33 / 1);
+     --color-white: rgba(255 255 255 / 1);
+     --color-blue: rgba(33 150 243 / 1);
+     --color-light-grey: rgba(245 244 250 / 1);
+     --color-middle-grey: rgba(117 117 117 / 1);
+     --color-dark-grey: rgba(47 48 58 / 1);
+     
      /* block models */
      --section-padding: 94px 0;
 
@@ -28,11 +28,13 @@
 }
 
 /* body of page */
+body * {
+      letter-spacing: var(--letter-spacing-medium);
+}
  body {
-     background-color: var(--white-color);
+     background-color: var(--color-white);
      font-family: var(--font-family);
-     color: var(--font-color);
-     letter-spacing: var(--letter-spacing-03);
+     color: var(--color-font);
 }
 /* no underlined link */
  a {
@@ -47,7 +49,7 @@ h2 {
 }
 /* header style */
 .header {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--color-border);
     min-height: 80px;
     display: flex;
     justify-content: space-between;
@@ -85,13 +87,13 @@ h2 {
      font-size: 14px;
      font-weight: 500;
      line-height: 1.1;
-     letter-spacing: var(--letter-spacing-02);
+     letter-spacing: var(--letter-spacing-small);
 }
 .header a[title] {
-    color: var(--middle-grey-color);
+    color: var(--color-middle-grey);
 }
 .header a[title]:hover {
-color: var(--blue-color);
+color: var(--color-blue);
 }
 /* logo top and footer styles */
  .logo {
@@ -99,23 +101,23 @@ color: var(--blue-color);
      font-size: 26px;
      font-weight: 700;
      line-height: 1.2;
-     letter-spacing: var(--letter-spacing-03) 
+     letter-spacing: var(--letter-spacing-medium) 
 }
 /* logo style light-blue text */
  .logo > span {
-     color: var(--blue-color);
+     color: var(--color-blue);
 }
 /* links style love/hate order */
  a:focus {
-     outline: var(--blue-color);
+     outline: var(--color-blue);
 }
  a:link, 
  a:visited {
-     color: var(--font-color);
+     color: var(--color-font);
 }
  a:hover, 
  a:active {
-     color: var(--blue-color);
+     color: var(--color-blue);
 }
 /* buttons style */
  .button {
@@ -124,23 +126,23 @@ color: var(--blue-color);
      font-size: 16px;
      font-weight: 500;
      line-height: 1.6;
-     color: var(--font-color);
+     color: var(--color-font);
      cursor: pointer;
 }
 /* front page button header */
  .button-main {
      padding: 10px 42px;
-     background-color: var(--blue-color);
-     color: var(--white-color);
+     background-color: var(--color-blue);
+     color: var(--color-white);
      box-shadow: 0 4px 4px 0 rgba(0 0 0 / .15);
      text-align: center;
-     letter-spacing: var(--letter-spacing-06);
+     letter-spacing: var(--letter-spacing-large);
      line-height: 1.9;
 }
 /* front page headline */
  .headline {
-     background-color: var(--dark-grey-color);
-     color: var(--white-color);
+     background-color: var(--color-dark-grey);
+     color: var(--color-white);
      height: 600px;
      text-align: center;
      display: flex;
@@ -152,7 +154,7 @@ color: var(--blue-color);
      text-transform: uppercase;
      line-height: 1.4;
      margin-top: 0;
-     letter-spacing: var(--letter-spacing-06);
+     letter-spacing: var(--letter-spacing-large);
      margin-bottom: 30px;
 }
 /* headline wrapper */
@@ -186,7 +188,7 @@ color: var(--blue-color);
 }
  .col-4 p {
      line-height: 1.7;
-     color: var(--middle-grey-color);
+     color: var(--color-middle-grey);
      margin: var(--margin-zero);
 }
 /* section h2 style and padding */
@@ -211,7 +213,7 @@ section h2 {
 }
 /* team section */
  .team {
-     background-color: var(--light-grey-color);
+     background-color: var(--color-light-grey);
      text-align: center;  
 }
 
@@ -222,7 +224,7 @@ section h2 {
 }
 
  .team li {
-     background-color: var(--white-color);
+     background-color: var(--color-white);
      border-radius: 0 0 4px 4px;
      box-shadow: 0 2px 1px 0 
      rgba(0  0  0 / .2), 0 1px 1px 0 
@@ -236,7 +238,7 @@ section h2 {
 
 }
 .team p {
-    color: var(--middle-grey-color);
+    color: var(--color-middle-grey);
     margin: var(--margin-zero);
     padding-bottom: 30px;
 
@@ -251,12 +253,12 @@ section h2 {
 }
  .bttn-group-item {
      padding: 6px 22px;
-     background-color: var(--light-grey-color);
+     background-color: var(--color-light-grey);
      box-shadow: 0 1px 2px 0 rgba(0 0 0 / .08);
 }
  .bttn-group-item:hover {
-     background-color: var(--blue-color);
-     color: var(--white-color);
+     background-color: var(--color-blue);
+     color: var(--color-white);
 }
 /* projects gallery */
 
@@ -278,23 +280,23 @@ section h2 {
      font-size: 18px;
      line-height: 2;
      font-weight: 700;
-     letter-spacing: var(--letter-spacing-06);
+     letter-spacing: var(--letter-spacing-large);
      margin-bottom: 0;
 }
  .projects-gallery p {
-     color: var(--middle-grey-color);
-     letter-spacing: var(--letter-spacing-03);
+     color: var(--color-middle-grey);
+     letter-spacing: var(--letter-spacing-medium);
      line-height: 1.9;
      margin-top: 4px;
 }
 /* projects=gallery list border */
  .projects-gallery li {
-     border: 1px solid var(--border-color);
+     border: 1px solid var(--color-border);
 }
 
 /* footer section */
  .footer {
-     background-color: var(--dark-grey-color);
+     background-color: var(--color-dark-grey);
      padding: 60px 0;
 }
 /* general styles for footer list */
@@ -312,19 +314,19 @@ section h2 {
      color: rgba(255 255 255 / .6);
 }
  .footer a[title]:hover {
-     color: var(--blue-color);
+     color: var(--color-blue);
 }
  address {
      font-style: normal;
-     color: var(--white-color);
+     color: var(--color-white);
 }
  .footer .logo-footer {
-     color: var(--white-color);
+     color: var(--color-white);
      margin-bottom: 20px;
      line-height: 1.2;
      display: block;
 }
 .logo-footer:hover {
-    color: var(--blue-color);
+    color: var(--color-blue);
 }
  
